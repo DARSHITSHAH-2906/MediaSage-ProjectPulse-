@@ -1,0 +1,10 @@
+node_modules/
+dist/
+build/
+.env
+.next/
+pnpm-lock.yaml
+POSTMAN_DOCUMENTATION.md
+AGENTS.md
+CLAUDE.md
+backend/src/seed.ts
