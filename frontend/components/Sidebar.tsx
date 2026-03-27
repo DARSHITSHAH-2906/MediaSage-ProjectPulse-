@@ -16,7 +16,6 @@ const navItems = [
   { label: 'Dashboard', href: '/dashboard', icon: LayoutDashboard },
   { label: 'Projects', href: '/projects', icon: FolderKanban },
   { label: 'Tasks', href: '/tasks', icon: CheckSquare },
-  { label: 'Settings', href: '/settings', icon: Settings },
 ];
 
 export default function Sidebar() {

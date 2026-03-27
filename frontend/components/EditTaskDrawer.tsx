@@ -34,7 +34,7 @@ export default function EditTaskDrawer({ task, onClose, onSave, onDelete }: Prop
     if (!title.trim()) { setErrors({ title: 'Title is required' }); return; }
     setLoading(true);
     try {
-      await onSave(task.id, { title, description, status, priority, due_date: dueDate + 'T00:00:00Z' });
+      await onSave(task.id, { title, description, priority, due_date: dueDate + 'T00:00:00Z' });
       onClose();
     } finally { setLoading(false); }
   };
