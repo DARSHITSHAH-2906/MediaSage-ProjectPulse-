@@ -148,7 +148,6 @@ export default function BoardPage() {
                 handleTaskCreate({
                   title: fd.get('title') as string,
                   description: fd.get('description') as string,
-                  status: defaultStatus,
                   priority: fd.get('priority') as 'low' | 'medium' | 'high',
                   due_date: (fd.get('due_date') as string) + 'T00:00:00Z',
                 });
