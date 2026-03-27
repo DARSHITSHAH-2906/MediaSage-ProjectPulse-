@@ -9,7 +9,7 @@ const AUTH_ROUTES = ['/login', '/signup'];
 export default function ConditionalLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const router = useRouter();
-  const isAuthRoute = AUTH_ROUTES.some(r => pathname === r || pathname.startsWith(r + '/'));
+  // const isAuthRoute = AUTH_ROUTES.some(r => pathname === r || pathname.startsWith(r + '/'));
   
   const { user, isLoading, fetchUser } = useAuthStore();
   const hasFetched = useRef(false);
@@ -24,13 +24,13 @@ export default function ConditionalLayout({ children }: { children: React.ReactN
 
   useEffect(() => {
     if (!isLoading) {
-      if (!user && !isAuthRoute) {
+      if (!user) {
         router.push('/login');
-      } else if (user && isAuthRoute) {
+      } else if (user) {
         router.push('/dashboard');
       }
     }
-  }, [user, isLoading, isAuthRoute, router]);
+  }, [user, isLoading, router]);
 
   if (isLoading) {
     return (
@@ -38,10 +38,6 @@ export default function ConditionalLayout({ children }: { children: React.ReactN
         <div style={{ width: 24, height: 24, border: '3px solid rgba(192, 193, 255, 0.2)', borderTopColor: 'var(--primary)', borderRadius: '50%', animation: 'spin 1s linear infinite' }} />
       </div>
     );
-  }
-
-  if (isAuthRoute) {
-    return <>{children}</>;
   }
 
   return (
