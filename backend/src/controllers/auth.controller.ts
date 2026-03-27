@@ -45,7 +45,6 @@ export class AuthController {
     verify = async (req: Request, res: Response, next: NextFunction) => {
         try {
             const userRef = (req as any).user;
-            console.log(userRef);
             if (!userRef || !userRef.id) {
                 return res.status(401).json({ error: 'Unauthorized' });
             }

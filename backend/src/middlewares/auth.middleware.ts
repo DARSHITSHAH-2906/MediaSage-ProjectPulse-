@@ -6,7 +6,7 @@ export interface AuthRequest extends Request {
 }
 
 export const authenticateJWT = (req: AuthRequest, res: Response, next: NextFunction) => {
-    const token = req.cookies.jwt;
+    const token = req.cookies.token;
     if (!token) {
         return res.status(401).json({ error: 'Unauthorized: No token provided' });
     }

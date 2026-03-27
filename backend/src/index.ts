@@ -13,7 +13,7 @@ const app = express();
 const PORT = process.env.PORT;
 
 app.use(cors({
-    origin: process.env.FRONTEND_URL,
+    origin: [process.env.DEVELOPMENT_FRONTEND_URL as string, process.env.PRODUCTION_FRONTEND_URL as string],
     credentials: true,
 }));
 app.use(express.json());
