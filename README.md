@@ -43,13 +43,13 @@ ProjectPulse is a productivity tool designed to help users manage their projects
 
 ```
 MediaSage/
-├── projectpulse/           # Frontend (Next.js)
+├── frontend/               # Frontend (Next.js)
 │   ├── app/                # App Router pages
 │   ├── components/         # React components
 │   ├── lib/                # Utilities and API client
 │   └── public/             # Static assets
 │
-└── projectpulse-backend/   # Backend (Express.js)
+└── backend/                # Backend (Express.js)
     └── src/
         ├── controllers/    # Request handlers
         ├── services/       # Business logic
