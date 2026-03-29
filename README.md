@@ -64,10 +64,10 @@ MediaSage/
 
 | Resource | URL |
 |----------|-----|
-| **Frontend URL** | [FRONTEND_URL](https://projectpulse.vercel.app/) |
-| **Backend URL** | [BACKEND_URL](https://projectpulse-backend.vercel.app/) |
+| **Frontend URL** | [FRONTEND_URL](https://media-sage-project-pulse.vercel.app/) |
+| **Backend URL** | [BACKEND_URL](https://mediasage-projectpulse.onrender.com) |
 | **Postman Documentation** | [POSTMAN_LINK](https://wrap-link.vercel.app/url/6) |
-| **Demo Video** | [DRIVE_LINK](https://drive.google.com/file/d/1Q11L921212121212121212121212121/view?usp=sharing) |
+| **Demo Video** | [DRIVE_LINK](https://drive.google.com/drive/folders/1BxlcEPx1jVBLB1qBoMBD-FVz7VfPD9On?usp=sharing) |
 
 ## Getting Started
 
