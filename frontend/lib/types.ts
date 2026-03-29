@@ -41,4 +41,6 @@ export interface CreateTaskInput {
   due_date: string;
 }
 
-export interface UpdateTaskInput extends Partial<CreateTaskInput> {}
+export interface UpdateTaskInput extends Partial<CreateTaskInput> {
+  status?: TaskStatus;
+}
